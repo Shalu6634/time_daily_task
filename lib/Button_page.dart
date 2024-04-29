@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple.shade300,
+        backgroundColor: Colors.deepPurple.shade300,
         title: Center(
           child: Text(
             'Button',
@@ -32,20 +32,26 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {},
               child: Text('Outlined'),
             ),
-            FloatingActionButton(
+            FilledButton(
               onPressed: () {},
-              child: Icon(Icons.add),
+              child: Text('Filled'),
+            ),
+            FilledButton.tonal(
+              onPressed: () {},
+              child: Text('FilledTonal'),
             ),
             TextButton(
               onPressed: () {},
               child: Text('TextButton'),
             ),
+            FloatingActionButton(
+              onPressed: () {},
+              child: Icon(Icons.add),
+            ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.add),
+              icon: Icon(Icons.access_time),
             ),
-            BackButton(),
-            CloseButton(),
           ],
         ),
       ),
