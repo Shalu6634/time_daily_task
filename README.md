@@ -6,7 +6,7 @@
 # Asynchronous Programming
 # 1) What is Asynchronous Programming?
 
-  Asynchronous programming is a programming paradigm that allows tasks or operationto run independently nd concurrently, 
+  Asynchronous programming is a programming paradigm that allows tasks or operation to run independently and concurrently, 
   without waiting for each other to complete before moving on to the next task. 
 
 # 2) What is Future Class ?
@@ -45,6 +45,19 @@ may take some time to complete, such as fetching data from a network or reading 
 Use of await keyword :
 
 The await keyword is used to pause the execution of an asynchronous function until a particular asynchronous operation is completed. It can only be used inside an async function.
+
+```bash
+import 'dart:io';
+
+void main() async {
+  print("Hello dart");
+  await Future.delayed(Duration(seconds: 3), () {
+    print("Hello Java");
+  });
+  print("Hello Flutter");
+}
+
+```
 
 # 5) What is Recursion ? With Example
 Recursion is the method where a function calls itself as its subroutine.
