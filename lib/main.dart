@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'Button_page.dart';
+import 'ClockApp/clock_app.dart';
 
 void main()
 {
@@ -20,7 +20,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context)=>HomePage(),
+        '/': (context)=>ClockApp(),
+        '/clock':(context)=>HomePage(),
       },
     );
   }
