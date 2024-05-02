@@ -1,7 +1,9 @@
+
 import 'dart:async';
 
+import 'package:clock_app/utils/global.dart';
 import 'package:flutter/material.dart';
-import 'package:time_daily_task/utils/global.dart';
+// import 'package:time_daily_task/utils/global.dart';
 
 class ClockApp extends StatefulWidget {
   const ClockApp({super.key});
@@ -21,7 +23,6 @@ class _ClockAppState extends State<ClockApp> {
         } else {
           time = 'AM';
         }
-
         switch (dateTime.weekday) {
           case 1:
             day = 'Monday';
@@ -63,12 +64,19 @@ class _ClockAppState extends State<ClockApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.notifications_active,color: Colors.white,size: 30,),
+
               Text(
                 '${dateTime.hour} : ${dateTime.minute} : ${dateTime.second}  $time',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 29,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold),
+              ),
+              Text(
+                '${dateTime.day} : ${dateTime.month} : ${dateTime.year} ',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 35,
                     fontWeight: FontWeight.bold),
               ),
               Text(
@@ -82,3 +90,39 @@ class _ClockAppState extends State<ClockApp> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
