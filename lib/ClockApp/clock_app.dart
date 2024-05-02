@@ -101,7 +101,7 @@ class _ClockAppState extends State<ClockApp> {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 110),
               child: Column(
                 children: [
                   Text.rich(
