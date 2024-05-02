@@ -3,8 +3,9 @@
 
 <p>
     <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/664c2317-134f-48fb-b764-5f566fbc275f" width = 30%  height = 25%>
-  <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/39710de3-eaeb-4e64-b19a-c4c87270971f"  width = 27%  height = 27%>
+  <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/299a0cc8-3591-4f07-95a6-4818b7afed0b"  width = 27%  height = 27%>
 </p>
+
 
 
 # Asynchronous Programming
