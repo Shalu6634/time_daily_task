@@ -1,15 +1,20 @@
 # Button Task
 
+ <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/664c2317-134f-48fb-b764-5f566fbc275f" width = 30%  height = 25%>
 
-<p>
-    <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/664c2317-134f-48fb-b764-5f566fbc275f" width = 30%  height = 25%>
-  <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/299a0cc8-3591-4f07-95a6-4818b7afed0b"  width = 27%  height = 27%>
-</p>
+# Digital clock
 
+ <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/299a0cc8-3591-4f07-95a6-4818b7afed0b"  width = 27%  height = 27%>
+ 
+# Analogue clock
 
+ <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/5321988a-6407-4566-a46a-61911c611ee0"  width = 25%  height = 25%>
 
 
 https://github.com/Shalu6634/time_daily_task/assets/149373622/d4abdcef-712e-46a3-9083-06c8e226315a
+
+https://github.com/Shalu6634/time_daily_task/assets/149373622/2eb75470-151d-4fc3-b0e8-8c5265503164
+
 
 
 
