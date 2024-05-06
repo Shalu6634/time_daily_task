@@ -1,8 +1,8 @@
-
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:time_daily_task/utils/global.dart';
+
+import '../utils/global.dart';
 
 class ClockApp extends StatefulWidget {
   const ClockApp({super.key});
@@ -49,7 +49,6 @@ class _ClockAppState extends State<ClockApp> {
         switch (dateTime.month) {
           case 1:
             month = 'Jan';
-            month = 'Jan';
             break;
           case 2:
             month = 'Feb';
@@ -94,31 +93,33 @@ class _ClockAppState extends State<ClockApp> {
           child: Container(
             height: double.infinity,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.black,
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage('assets/img/1.jpg'),
+                image: NetworkImage(
+                    'https://images.unsplash.com/photo-1507400492013-162706c8c05e?q=80&w=2159&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.only(top: 60),
+              padding: const EdgeInsets.only(top: 50),
               child: Column(
+
                 children: [
                   Text.rich(
                     TextSpan(
                       children: [
                         TextSpan(
                           text:
-                          '${dateTime.hour % 12} : ${dateTime.minute} : ${dateTime.second} ',
-                          style: TextStyle(
+                          '${dateTime.hour % 12} : ${dateTime.minute} : ${dateTime.second}',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 30,
                               fontWeight: FontWeight.bold),
                         ),
                         TextSpan(
                           text: '$time',
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),
@@ -131,12 +132,12 @@ class _ClockAppState extends State<ClockApp> {
                       children: [
                         TextSpan(
                           text: day,
-                          style: TextStyle(
+                          style:const  TextStyle(
                               color: Colors.white,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),
                         ),
-                        TextSpan(
+                       const  TextSpan(
                           text: ', ',
                           style: TextStyle(
                               color: Colors.white,
@@ -145,14 +146,14 @@ class _ClockAppState extends State<ClockApp> {
                         ),
                         TextSpan(
                           text: '${dateTime.day} ',
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),
                         ),
                         TextSpan(
                           text: month,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.white,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),
@@ -160,83 +161,44 @@ class _ClockAppState extends State<ClockApp> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  Container(
-                    height: 190,
-                    width: 190,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white, width: 5),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Stack(
-                      alignment: Alignment.center,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 120, top:530),
+                    child:
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Transform.rotate(
-                          angle: ( dateTime.hour * 30* pi) / 180,
-                          child: const Center(
-                            child: VerticalDivider(
-                              thickness: 3,
-                              color: Colors.red,
-                              indent: 50,
-                              endIndent: 80,
-                            ),
-                          ),
-                        ),
-                        ...List.generate(60, (index) =>
-                            Transform.rotate(
-                              angle:( (index + 1)*6*pi)/180,
-                              child: ((index+1)%5==0)
-                                  ?
-                              const VerticalDivider(
-                                thickness: 2,
-                                color: Colors.red,
-                                indent: 0,
-                                endIndent: 160,
-                              )
-                                  :
-                              VerticalDivider(
-                                thickness: 2,
-                                color: Colors.grey,
-                                indent: 0,
-                                endIndent: 170,
-                              ),
-                            ),
-                        ),
-
-                        Center(
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).pushNamed('/analogue');
+                          },
                           child: Container(
-                            height: 8,
-                            width: 8,
+                            height: 60,
+                            width: 150,
                             decoration: BoxDecoration(
-                                color: Colors.black, shape: BoxShape.circle),
-                          ),
-                        ),
-                        Transform.rotate(
-                          angle: (dateTime.second * 6 * pi) / 180,
-                          child: const Center(
-                            child: VerticalDivider(
-                              thickness: 2,
-                              color: Colors.red,
-                              indent: 23,
-                              endIndent: 80,
+                              gradient: const LinearGradient(
+                                  colors: [
+                                    Colors.black12,
+                                    Colors.white,
+                                  ]
+                              ),
+                              border: Border.all(color: Colors.blueGrey,width: 2),
+                              borderRadius: BorderRadius.circular(30),
+                              color: Colors.white12,
                             ),
-                          ),
-                        ),
-                        Transform.rotate(
-                          angle: (dateTime.minute *6* pi) / 180,
-                          child: const  Center(
-                            child: VerticalDivider(
-                              thickness: 2,
-                              color: Colors.black,
-                              indent: 28,
-                              endIndent: 80,
+                            child:const  Center(
+                              child: Text(
+                                'Analogue',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ],
                     ),
+
                   ),
                 ],
               ),
