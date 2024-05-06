@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Button_page.dart';
-import 'ClockApp/Analogue_clock.dart';
-import 'ClockApp/Strap_clock.dart';
-import 'ClockApp/digital_clock.dart';
 
+import 'package:time_daily_task/ClockApp/digital_clock.dart';
+import 'package:time_daily_task/ClockApp/Analogue_clock.dart';
+import 'package:time_daily_task/ClockApp/Strap_clock.dart';
 
 void main()
 {
