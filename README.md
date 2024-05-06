@@ -5,7 +5,7 @@
 # Digital clock
 
  <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/299a0cc8-3591-4f07-95a6-4818b7afed0b"  width = 27%  height = 27%>
- <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/8d6bb85d-d75d-470c-b39f-adf63d39ca29"  width = 24%  height = 27%>
+ <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/8d6bb85d-d75d-470c-b39f-adf63d39ca29"  width = 25%  height = 25%>
  
 # Analogue clock
 
