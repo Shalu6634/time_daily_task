@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Button_page.dart';
-import 'ClockApp/clock_app.dart';
+// import 'Button_page.dart';
+// import 'ClockApp/clock_app.dart';
+import 'clock/Strap_clock.dart';
+import 'clock/analogue.dart';
+import 'clock/digital.dart';
 
 void main()
 {
@@ -21,7 +24,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context)=>ClockApp(),
-        '/clock':(context)=>HomePage(),
+        '/analogue':(context)=>Analogue(),
+        '/strap':(context)=>StrapClock(),
       },
     );
   }
