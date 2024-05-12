@@ -113,11 +113,21 @@ void main() {
 ## Digital
 <img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/dadb39d0-f825-4b23-9406-0728591e8a34" width = 20%  height = 25%>
 
+
+https://github.com/Shalu6634/time_daily_task/assets/149373622/e5df370d-cf67-4a50-a2c5-494ff7952973
+
 ## Analog
 <img src ="https://github.com/Shalu6634/time_daily_task/assets/149373622/8ba8c6bd-d07b-4574-be1c-1a4da3e1ef90" width = 20%  height = 25%>
+
+https://github.com/Shalu6634/time_daily_task/assets/149373622/22bb2d02-0299-4f50-8b35-84f3a88bff52
+
 
 
 ## Strap watch
 <img src ="https://github.com/Shalu6634/time_daily_task/assets/149373622/63f1fb47-c8b0-4c13-954f-4f2dab3c52db" width = 20%  height = 25%>
+
+
+https://github.com/Shalu6634/time_daily_task/assets/149373622/0acb73d0-880a-4457-be80-8a7f2b5cae15
+
 
 
