@@ -110,4 +110,14 @@ void main() {
 }
 ```
 
+## Digital
+<img src = "https://github.com/Shalu6634/time_daily_task/assets/149373622/dadb39d0-f825-4b23-9406-0728591e8a34" width = 20%  height = 25%>
+
+## Analog
+<img src ="https://github.com/Shalu6634/time_daily_task/assets/149373622/8ba8c6bd-d07b-4574-be1c-1a4da3e1ef90" width = 20%  height = 25%>
+
+
+## Strap watch
+<img src ="https://github.com/Shalu6634/time_daily_task/assets/149373622/63f1fb47-c8b0-4c13-954f-4f2dab3c52db" width = 20%  height = 25%>
+
 
